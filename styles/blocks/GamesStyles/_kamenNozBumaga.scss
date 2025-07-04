@@ -1,0 +1,83 @@
+.game__monitor--knb
+{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  h1
+  {
+    text-align: center;
+  }
+}
+.game__monitor--knb--icons
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.game__monitor--knb--icons > div:first-child
+{
+  background: linear-gradient(to left, #c11b75, #af2179);
+}
+.game__monitor--knb--icons > div:last-child
+{
+  background: linear-gradient(to left, #d61471, #c51b75);
+}
+.game__monitor--knb--icons > div
+{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  width: 400px;
+  height: 400px;
+  border-radius: 20px;
+  padding: 20px;
+  gap: 10px;
+  flex-shrink: 0;
+}
+.game__monitor--knb--icons > div span
+{
+  display: block;
+  height: 100%;
+  width: 100%;
+  padding: 10px;
+  background-color: #d70fed;
+  border-radius: 20px;
+}
+.knb__monitor--left
+{
+  background-image: url("../../../images/rockPaperScissors/bum.png");
+  background-repeat: no-repeat;
+  background-position-y: 20px;
+  background-position-x: 50%;
+  background-size: 60%;
+}
+.knb__monitor--right
+{
+  background-image: url("../../../images/rockPaperScissors/bum.png");
+  background-repeat: no-repeat;
+  background-position-y: 20px;
+  background-position-x: 50%;
+  background-size: 60%;
+}
+.game__monitor--knb--btn
+{
+  margin-bottom: 10px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
+  font-size: 24px;
+  div
+  {
+    padding: 10px;
+    border: 1px solid #972b80;
+    width: 100%;
+    max-width: 300px;
+    text-align: center;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+}

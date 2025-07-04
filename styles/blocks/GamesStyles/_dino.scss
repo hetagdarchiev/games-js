@@ -1,0 +1,167 @@
+.dino__scene {
+  background-color: #7fc7ff;
+  width: 100%;
+  height: 350px;
+  margin-inline: auto;
+  border-radius: 40px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: .3s ease-in-out;
+  .CapyBara
+  {
+    filter: brightness(100%);
+    transition: .3s ease-in-out;
+  }
+  .Jaguar
+  {
+    filter: opacity(1);
+    transition: .3s ease-in-out;
+  }
+  &-animals {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+  }
+
+  &-earth {
+    background-color: #edcd98;
+    height: 110px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    transition: .3s ease-in-out;
+
+    &-line {
+      height: 2px;
+      background-color: #575757;
+      width: 100%;
+      position: absolute;
+      bottom: 110px;
+    }
+  }
+
+  .sun {
+    position: absolute;
+    right: -100px;
+    top: 5px;
+    transform: translateX(-50%);
+    transition: .3s ease-in-out;
+
+    &__circle {
+      width: 60px;
+      height: 60px;
+      background-color: yellow;
+      border-radius: 50px;
+      transition: .3s ease-in-out;
+    }
+  }
+  .sunMove {
+    animation-name: sunMove;
+    animation-duration: 100s;
+    animation-timing-function: linear;
+  }
+
+  @keyframes sunMove {
+    0% {
+      right: -100px;
+    }
+    100% {
+      right: 100vw;
+    }
+  }
+
+  img {
+    display: block;
+  }
+
+  #capyBara, #jaguar {
+    position: relative;
+  }
+
+  #capyBara {
+    left: 50px;
+    bottom: 100px;
+    width: 60px;
+  }
+
+  .capyBaraAnimate {
+    animation-name: capyAnimation;
+    animation-duration: .8s;
+    animation-timing-function: linear;
+  }
+
+  @keyframes capyAnimation {
+    0% {
+      bottom: 100px;
+    }
+    50% {
+      bottom: 250px;
+    }
+    100% {
+      bottom: 100px;
+    }
+  }
+
+  #jaguar {
+    width: 100px;
+    right: -100px;
+    bottom: 80px;
+  }
+
+  .jaguarAnumate {
+    animation-name: jaguarAnumate;
+    animation-duration: 3s;
+    animation-timing-function: inherit;
+  }
+
+  @keyframes jaguarAnumate {
+    0% {
+      right: -100px;
+    }
+    100% {
+      right: 110%;
+    }
+  }
+}
+.dino__scene-dark
+{
+  background-color: rgb(14, 19, 27);
+  transition: .3s ease-in-out;
+  .dino__scene-earth
+  {
+    background-color: #836c4f !important;
+    transition: .3s ease-in-out;
+  }
+  .CapyBara
+  {
+    filter: brightness(30%);
+    transition: .3s ease-in-out;
+  }
+  .Jaguar
+  {
+    filter: opacity(.1);
+    transition: .3s ease-in-out;
+  }
+  .sun {
+    position: absolute;
+    right: -100px;
+    top: 5px;
+    transform: translateX(-50%);
+    transition: .3s ease-in-out;
+
+    &__circle {
+      background-color: #e6e6e6;
+      clip-path: polygon(
+                      37% 16%, 69% 23%,
+                      47% 30%, 35% 50%,
+                      50% 63%, 79% 57%,
+                      59% 81%, 30% 85%,
+                      10% 57%, 16% 34%);
+      transition: .3s ease-in-out;
+    }
+  }
+}

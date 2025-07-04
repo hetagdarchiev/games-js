@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bobr - Kurwa</title>
+    <link rel="stylesheet" href="node_modules/normalize.css/normalize.css">
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+<header>
+    <div class="header__inside">
+        <div class="header__logo">
+            <a href="#">
+                Bobr - Kurwa
+            </a>
+            <div class="menu__open">
+                <div class="menu__open--line"></div>
+            </div>
+        </div>
+        <div class="header__inside--bottom">
+            <a href="#" class="button">Змейка</a>
+            <a href="#" class="button">Дино</a>
+            <a href="#" class="button">Камень, Ножницы,<br> Бумага</a>
+            <a href="#" class="button">Крестики-Нолики</a>
+            <a href="#" class="button OtherGames" style="display: none">Остальное</a>
+        </div>
+    </div>
+</header>
+<main>
+    <div class="game__monitor">
+        <div class="game__monitor--snake game invisible">
+            <img src="images/Snake/SnakeHead.png" alt="snake" class="snake__head">
+            <div class="apple"></div>
+        </div>
+        <div class="game__monitor--dino game invisible">
+            <h2 style="text-align: center; font-weight: 400">Капибара против Ягуара</h2>
+            <div class="dino__scene ">
+                <div class="dino__scene-animals">
+                    <img src="images/dino/capyBara.svg"
+                         aria-hidden="true"
+                         id="capyBara"
+                         class="CapyBara">
+                    <img src="images/dino/jaguar.svg"
+                         aria-hidden="true"
+                         id="jaguar"
+                         class="Jaguar">
+                </div>
+                <div class="dino__scene-earth">
+                    <div class="dino__scene-earth-line"></div>
+                </div>
+                <div class="sun sunMove ">
+                    <div class="sun__circle"></div>
+                </div>
+            </div>
+        </div>
+        <div class="game__monitor--knb game invisible">
+            <h1>Камень Ножницы Бумага</h1>
+            <div class="game__monitor--knb--icons">
+                <div class="leftPlayer">
+                    <span class="knb__monitor--left">
+
+                    </span>
+                    <p>Игрок</p>
+                </div>
+                <div class="leftPlayer">
+                    <span class="knb__monitor--right">
+
+                    </span>
+                    <p>Искусственный интеллект</p>
+                </div>
+            </div>
+            <div class="game__monitor--knb--btn">
+                <div>Камень</div>
+                <div>Ножницы</div>
+                <div>Бумага</div>
+            </div>
+        </div>
+        <div class="game__monitor--krestnol game invisible">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+    <input type="text" name="" id="" class="snake__input">
+</main>
+<footer></footer>
+<script src="jsFiles/snake.js" type="module"></script>
+<script src="jsFiles/KrestikoNoliki.js" type="module"></script>
+<script src="jsFiles/_dino.js" type="module"></script>
+<script src="jsFiles/index.js" type="module"></script>
+
+</body>
+</html>
